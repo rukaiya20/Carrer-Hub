@@ -17,10 +17,10 @@ const Banner = () => {
                 <p className='ms-20 text-base text-slate-500 mt-6'>
                   Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.
                 </p>
-                <button className='text-2xl font-extrabold text-white bg-gradient-to-r from-indigo-400 to-purple-400 text-purple-300 ms-20 px-5 py-4 rounded-lg mt-6 mb-40'>Get Started</button>
+                <button className='text-2xl font-extrabold text-white bg-gradient-to-r from-indigo-400 to-purple-400 text-purple-300 ms-20 px-5 py-4 rounded-lg mt-6 lg:mb-40'>Get Started</button>
             </div>
             <div>
-                <h2 className='mt-5'>
+                <h2 className='lg:mt-5 sm:mt-10'>
                     <img src={BannerO} alt="" />
                 </h2>
             </div>
