@@ -36,7 +36,7 @@ const Navbar = () => {
                    </Link>
                 </li>
              
-                <li><button className='text-2xl font-extrabold text-white bg-gradient-to-r from-indigo-400 to-purple-400 text-purple-300  lg:mt-5 p-2 lg:px-4 lg:py-6 rounded-lg lg:me-3'>Start Applying</button></li>
+                <li><button className='text-2xl font-extrabold text-white bg-gradient-to-r from-indigo-400 to-purple-400 text-purple-300  lg:mt-5 p-2 lg:px-4 lg:py-6 rounded-xl lg:me-3'>Start Applying</button></li>
             </ul>
         </>
     );
