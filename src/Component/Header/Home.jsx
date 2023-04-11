@@ -1,10 +1,14 @@
 import React from 'react';
-import Header from './Header';
+import Navbar from './Navbar';
+import { Outlet } from 'react-router-dom';
+
 
 const Home = () => {
     return (
         <div>
-            <Header></Header>
+            <Navbar></Navbar>
+            <h2>This is Home</h2>
+            <Outlet></Outlet>
         </div>
     );
 };
