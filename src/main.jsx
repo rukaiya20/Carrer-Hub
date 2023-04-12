@@ -1,26 +1,39 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './Component/Header/Home'
+
 import Statistics from './Component/Statistics';
-import AppliedJobs from './Component/AppliedJobs';
 import Blog from './Component/Blog';
+import Home from './Component/Header/Home';
+import Banner from './Component/Banner';
+import JobList from './Component/JobList';
+import JobDetails from './Component/JobDetails';
+import ApplyJob from './Component/ApplyJob';
+import { jobDataLoader } from './loader/getCradJobData';
+import ErrorPage from './Component/ErrorPage';
 
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App></App>,
+    element: <Home></Home>,
+    errorElement : <ErrorPage></ErrorPage>,
     children:[
       {
-        path: '/',
-        element: <Home></Home>
+        path: '/home',
+        element: <Banner></Banner>,
+        loader: () => fetch('JobCatagory.json') 
+      },
+     
+      {
+        path: '/job/:id',
+        element: <JobDetails></JobDetails>,
+        loader:() => fetch(`/jobDetails.json`)
       },
       {
         path: '/statistics',
@@ -28,7 +41,9 @@ const router = createBrowserRouter([
       },
       {
         path: "/appliedJobs",
-        element: <AppliedJobs></AppliedJobs>
+        element: <ApplyJob></ApplyJob>,
+        loader:jobDataLoader
+       
       },
       {
         path: "/blog",

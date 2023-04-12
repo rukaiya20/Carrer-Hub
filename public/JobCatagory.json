@@ -1,0 +1,30 @@
+[
+    {
+        "id": "845a1",
+        "name": "Account & Finance",
+        "jobAmount": "300 Jobs Available",
+        "img": "https://www.kindpng.com/picc/m/326-3260260_transparent-accounting-icon-png-png-download.png"
+       
+    },
+    {
+        "id": "845b2",
+        "name": "Creative Design",
+        "jobAmount": "250 Jobs Available",
+        "img": "https://p7.hiclipart.com/preview/879/316/9/incandescent-light-bulb-color-concept-art-clip-art-business-solution.jpg"
+       
+    },
+    {
+        "id": "845c3",
+        "name": "Marketing & Sales",
+        "jobAmount": "800 Jobs Available",
+        "img": "https://www.seekpng.com/png/detail/764-7642468_training-sales-and-marketing-icon.png"
+       
+    },
+    {
+        "id": "845d4",
+        "name": "Engineering Job",
+        "jobAmount": "500 Jobs Available",
+        "img": "https://cdn-icons-png.flaticon.com/512/6454/6454324.png"
+       
+    }
+]
