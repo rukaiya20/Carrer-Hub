@@ -64,7 +64,7 @@ const Banner = () => {
       jobData.slice(0,showAll ? 6 : 4).map(data => <FeaturedJobs key={data.id} data={data}></FeaturedJobs>)
      }
 </div>
-{!showAll&& <p className="text-center m-auto">
+{!showAll && <p className="text-center m-auto">
       <button className="bg-indigo-400 text-xl font-extrabold text-white bg-gradient-to-r from-indigo-400 to-purple-400 text-purple-300  rounded-xl px-5 py-4 mt-3 mb-10" onClick={handleSeeALl}>See All Job</button>
      </p>}
         </div>
