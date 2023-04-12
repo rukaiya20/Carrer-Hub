@@ -7,10 +7,13 @@ const ApplyJob = () => {
     const { newArr } = useLoaderData();
     return (
         <div> 
-            <h1 className='text-center mt-20 pb-20 text-4xl font-extrabold'>Applied Jobs</h1>
+            <h1 className='text-center mt-20 pb-20 text-4xl font-extrabold'>
+                Applied Jobs
+            </h1>
             <ul>
             {
-             newArr.map(data=> <Cart
+             newArr.map(data=> 
+             <Cart
                  key={data.id} data={data}
              ></Cart>)    
            }
