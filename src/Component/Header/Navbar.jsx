@@ -20,7 +20,7 @@ const Navbar = () => {
                 
                 <li className='lg:mt-10 sm:mt-1' >
                     <Link className='font-extrabold text-2xl ' 
-                      to='/home'> 
+                      to='/'> 
                       Home
                     </Link>
                 </li>
